@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="noto_hestia_black.otf">
+            <string>NotoSansKR-Black</string>
+        </array>
+        <array key="sb_aggro_b.ttf">
+            <string>SBAggroB</string>
+        </array>
+        <array key="sb_aggro_m.ttf">
+            <string>SBAggroM</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="512" id="3V7-du-ne0" customClass="StoriesContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="512"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3V7-du-ne0" id="BHO-aT-pvC">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="512"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpv-IR-Ea5">
+                        <rect key="frame" x="0.0" y="40" width="414" height="465"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnH-ps-5Wp">
+                                <rect key="frame" x="20" y="40" width="314" height="18"/>
+                                <fontDescription key="fontDescription" name="SBAggroB" family="SB Aggro" pointSize="15"/>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5o-aF-PmT">
+                                <rect key="frame" x="344" y="32" width="54" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="p4B-6a-k0e"/>
+                                    <constraint firstAttribute="width" constant="54" id="phE-yO-Pj6"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="imgmore.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7W-eL-jxO">
+                                <rect key="frame" x="20" y="78" width="113" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="6yo-T2-ULM"/>
+                                    <constraint firstAttribute="height" constant="33" id="961-Da-YYF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Black" family="Noto Sans KR" pointSize="12"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="21" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="댓툰 그리기" backgroundImage="btnreplydraw.png"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvw-Qw-LkV">
+                                <rect key="frame" x="0.0" y="124" width="414" height="333"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="F2E-KA-1fy"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="n1Q-qU-LAg"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q7W-eL-jxO" firstAttribute="top" secondItem="EnH-ps-5Wp" secondAttribute="bottom" constant="20" id="4UE-6j-6g9"/>
+                            <constraint firstAttribute="bottom" secondItem="Qvw-Qw-LkV" secondAttribute="bottom" constant="10" id="4dY-cs-7hS"/>
+                            <constraint firstItem="O5o-aF-PmT" firstAttribute="top" secondItem="fpv-IR-Ea5" secondAttribute="top" constant="32" id="4iM-3r-EoX"/>
+                            <constraint firstItem="Q7W-eL-jxO" firstAttribute="leading" secondItem="fpv-IR-Ea5" secondAttribute="leading" constant="20" id="6lG-Ow-LNh"/>
+                            <constraint firstItem="Qvw-Qw-LkV" firstAttribute="leading" secondItem="fpv-IR-Ea5" secondAttribute="leading" id="76H-hf-R9v"/>
+                            <constraint firstAttribute="trailing" secondItem="Qvw-Qw-LkV" secondAttribute="trailing" id="7Cp-4T-xyr"/>
+                            <constraint firstAttribute="width" constant="414" id="Cu0-r2-kXR"/>
+                            <constraint firstAttribute="trailing" secondItem="O5o-aF-PmT" secondAttribute="trailing" constant="23" id="FWp-Nl-YaD"/>
+                            <constraint firstItem="Qvw-Qw-LkV" firstAttribute="top" secondItem="Q7W-eL-jxO" secondAttribute="bottom" constant="20" id="GRc-hK-teR"/>
+                            <constraint firstAttribute="trailing" secondItem="O5o-aF-PmT" secondAttribute="trailing" constant="16" id="Sh5-Ca-f9o"/>
+                            <constraint firstItem="EnH-ps-5Wp" firstAttribute="leading" secondItem="fpv-IR-Ea5" secondAttribute="leading" constant="20" id="XQO-jc-bcJ"/>
+                            <constraint firstItem="EnH-ps-5Wp" firstAttribute="top" secondItem="fpv-IR-Ea5" secondAttribute="top" constant="40" id="ZKH-BO-Ifb"/>
+                            <constraint firstItem="O5o-aF-PmT" firstAttribute="leading" secondItem="EnH-ps-5Wp" secondAttribute="trailing" constant="10" id="dGw-bN-Qv1"/>
+                            <constraint firstItem="O5o-aF-PmT" firstAttribute="leading" secondItem="EnH-ps-5Wp" secondAttribute="trailing" constant="10" id="nWU-h4-qID"/>
+                            <constraint firstAttribute="height" constant="465" id="phN-cG-oqb"/>
+                            <constraint firstItem="O5o-aF-PmT" firstAttribute="top" secondItem="fpv-IR-Ea5" secondAttribute="top" constant="32" id="yd3-UF-v8J"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UcW-Il-2Tz">
+                        <rect key="frame" x="20" y="10" width="100" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="storytypebg.png" translatesAutoresizingMaskIntoConstraints="NO" id="thA-AY-gyQ">
+                                <rect key="frame" x="0.0" y="0.0" width="95" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="일상툰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqH-ZY-1I8">
+                                <rect key="frame" x="26" y="19" width="66" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SBAggroM" family="SB Aggro" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UcW-Il-2Tz" firstAttribute="top" secondItem="BHO-aT-pvC" secondAttribute="top" constant="10" id="1HS-FE-ZD0"/>
+                    <constraint firstItem="UcW-Il-2Tz" firstAttribute="leading" secondItem="BHO-aT-pvC" secondAttribute="leading" constant="20" id="8NP-jP-NWp"/>
+                    <constraint firstAttribute="trailing" secondItem="fpv-IR-Ea5" secondAttribute="trailing" id="Ar6-7r-1hi"/>
+                    <constraint firstItem="fpv-IR-Ea5" firstAttribute="top" secondItem="BHO-aT-pvC" secondAttribute="top" constant="40" id="LWZ-PE-CMH"/>
+                    <constraint firstAttribute="bottom" secondItem="fpv-IR-Ea5" secondAttribute="bottom" constant="7" id="mHe-Dz-UVE"/>
+                    <constraint firstItem="fpv-IR-Ea5" firstAttribute="leading" secondItem="BHO-aT-pvC" secondAttribute="leading" id="sjk-ev-PiP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnmore" destination="O5o-aF-PmT" id="aeN-Ar-OZS"/>
+                <outlet property="btnreplydraw" destination="Q7W-eL-jxO" id="cJG-2U-3Ld"/>
+                <outlet property="imgtype" destination="thA-AY-gyQ" id="TKs-yM-doC"/>
+                <outlet property="lblcontent" destination="EnH-ps-5Wp" id="rPS-Ne-E3s"/>
+                <outlet property="lbltype" destination="tqH-ZY-1I8" id="o6s-Ho-QVT"/>
+                <outlet property="scrollView" destination="Qvw-Qw-LkV" id="1en-Fj-3O4"/>
+            </connections>
+            <point key="canvasLocation" x="-878.26086956521749" y="368.97321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btnreplydraw.png" width="113" height="33"/>
+        <image name="imgmore.png" width="30" height="20"/>
+        <image name="storytypebg.png" width="173" height="85"/>
+    </resources>
+</document>

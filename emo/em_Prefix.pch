@@ -1,0 +1,29 @@
+//
+//  em_Prefix.pch
+//  emo
+//
+//  Created by user225901 on 8/25/22.
+//
+
+#ifndef em_Prefix_pch
+#define em_Prefix_pch
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIApplication.h>
+#import <UIKit/UIKit.h>
+#import "ApiHandler.h"
+#import "ASIFormDataRequest.h"
+#import "ASIHTTPRequest.h"
+#import "ContentCell.h"
+#import "StoriesContentCell.h"
+#import "JSONKit.h"
+#import "FSToast.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define SCREEN_HEIGHT         [[UIScreen mainScreen] bounds].size.height
+
+#define SCREEN_WIDTH          [[UIScreen mainScreen] bounds].size.width
+
+
+#endif /* em_Prefix_pch */
